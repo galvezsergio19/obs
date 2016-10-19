@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Online Banking System</a>
+    </div>
+    <!-- /.navbar-header -->
+
+    <div class="navbar-default sidebar" >
+        <div class="sidebar-nav navbar-collapse">
+            <ul class="nav in" id="side-menu">
+                <li>
+                    <a href="mypage" class="${isMyPageActive}"><span class="glyphicon glyphicon-dashboard"></span> My Page</a>
+                </li>
+                <li>
+                    <a href="fund-transfer" class="${isFundActive}"><span class="glyphicon glyphicon-transfer"></span> Funds Transfer</a>
+                </li>
+                <li>
+                    <a href="balance" class="${isBalanceActive}"><span class="glyphicon glyphicon-file"></span> Balance inquiry</a>
+                </li>
+                <li>
+                    <a href="account" class="${isAccountActive}"><i class="glyphicon glyphicon-plus-sign"></i> Enroll Account</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a>
+                    <ul class="nav nav-second-level">
+                    	<li>
+                            <a href="profile" class="${isProfileActive}"><span class="glyphicon glyphicon-check"></span>  View / Edit Profile</a>
+                        </li>
+                        <li>
+                            <a href="logout"><span class="glyphicon glyphicon-log-out"></span>  Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
